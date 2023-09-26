@@ -52,7 +52,7 @@ sleep(1)
 # Inicio do loop para emitir o espelho de cada posto do dia desejado
 
 while True:
-    if c < 10:
+    if c < len(postos):
         pyautogui.write(f'{dia - 1}{mes}{ano}')
         pyautogui.press('tab')
         sleep(1)
